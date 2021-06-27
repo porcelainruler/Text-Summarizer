@@ -1,0 +1,22 @@
+<html>
+      <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+      </head>
+   <body>
+      <form action = "http://127.0.0.1:5000/summary" method = "post">
+            <div class="container">
+                  <div class="text">
+                        <p>Enter Text:</p>
+                      <textarea type = "text" name = "raw_text">{{text}}</textarea>
+                  </div>
+                  <div class="text">
+                        <p>Summary:</p>
+                      <textarea type = "summary" name = "summ">{{summary}}</textarea>
+                  </div>
+            </div>
+            <div class="submit">
+                  <p><input type = "submit" value = "Submit" /></p>
+            </div>
+      </form>
+   </body>
+</html>
